@@ -1,0 +1,30 @@
+{
+  "name": "simplelogger",
+  "version": "0.0.1",
+  "description": "A simple but colorful logger",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:seanmcgary/simplelogger"
+  },
+  "keywords": [
+    "nodejs",
+    "logger",
+    "simple",
+    "colors"
+  ],
+  "author": "Sean McGary <sean@seanmcgary.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanmcgary/simplelogger/issues"
+  },
+  "dependencies": {
+    "colors": "*"
+  }
+}
