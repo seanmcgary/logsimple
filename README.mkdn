@@ -1,0 +1,25 @@
+Logsimple is a VERY simple logging module. Right now it gives you some nice formatting and some colors.
+
+## Install
+
+```npm install logsimple```
+
+## Use it
+
+Example:
+```javascript
+var logger = require('logsimple');
+
+logger.log('some ns', 'Some message', 'green');
+logger.error('some ns', 'some error message');
+logger.info('some ns', 'some info message');
+logger.warn('some ns', 'some warning message');
+```
+
+Output:
+```
+[       ](Sun Nov 24 2013 11:23:54 GMT-0800 (PST)) [some ns]                    Some message
+[ error ](Sun Nov 24 2013 11:23:54 GMT-0800 (PST)) [some ns]                    some error message
+[ info  ](Sun Nov 24 2013 11:23:54 GMT-0800 (PST)) [some ns]                    some info message
+[ warn  ](Sun Nov 24 2013 11:23:54 GMT-0800 (PST)) [some ns]                    some warning message
+```
