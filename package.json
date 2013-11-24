@@ -1,5 +1,5 @@
 {
-  "name": "simplelogger",
+  "name": "logsimple",
   "version": "0.0.1",
   "description": "A simple but colorful logger",
   "main": "index.js",
