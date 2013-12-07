@@ -1,4 +1,4 @@
-Logsimple is a VERY simple logging module. Right now it gives you some nice formatting and some colors.
+Logsimple is a VERY simple logging module. Right now it gives you some nice formatting and some colours.
 
 ## Install
 
