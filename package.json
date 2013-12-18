@@ -1,6 +1,6 @@
 {
   "name": "logsimple",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple but colorful logger",
   "main": "index.js",
   "directories": {

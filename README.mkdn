@@ -8,18 +8,32 @@ Logsimple is a VERY simple logging module. Right now it gives you some nice form
 
 Example:
 ```javascript
-var logger = require('logsimple');
+var logger = require('../index');
+
+var someObjectToBeLogged = {
+	error: "Yo this is an error",
+	message: "This happens to be a message"
+};
 
 logger.log('some ns', 'Some message', 'green');
 logger.error('some ns', 'some error message');
 logger.info('some ns', 'some info message');
 logger.warn('some ns', 'some warning message');
+logger.success('some ns', 'some success message');
+logger.infoAlt('some ns', 'some alternate info message');
+
+logger.infoRed('some ns', 'some message', someObjectToBeLogged);
+logger.infoYellow('warn ns', 'another message', new Error('something broke'));
 ```
 
 Output:
 ```
-[       ](Sun Nov 24 2013 11:23:54 GMT-0800 (PST)) [some ns]                    Some message
-[ error ](Sun Nov 24 2013 11:23:54 GMT-0800 (PST)) [some ns]                    some error message
-[ info  ](Sun Nov 24 2013 11:23:54 GMT-0800 (PST)) [some ns]                    some info message
-[ warn  ](Sun Nov 24 2013 11:23:54 GMT-0800 (PST)) [some ns]                    some warning message
+[       ](Wed Dec 18 2013 13:12:01 GMT-0800 (PST)) [some ns]                    Some message
+[ error   ](Wed Dec 18 2013 13:12:01 GMT-0800 (PST)) [some ns]                    some error message
+[ info    ](Wed Dec 18 2013 13:12:01 GMT-0800 (PST)) [some ns]                    some info message
+[ warn    ](Wed Dec 18 2013 13:12:01 GMT-0800 (PST)) [some ns]                    some warning message
+[ success ](Wed Dec 18 2013 13:12:01 GMT-0800 (PST)) [some ns]                    some success message
+[ info    ](Wed Dec 18 2013 13:12:01 GMT-0800 (PST)) [some ns]                    some alternate info message
+[         ](Wed Dec 18 2013 13:12:01 GMT-0800 (PST)) [some ns]                    some message - {"error":"Yo this is an error","message":"This happens to be a message"}
+[         ](Wed Dec 18 2013 13:12:01 GMT-0800 (PST)) [warn ns]                    another message - Error: something broke
 ```
